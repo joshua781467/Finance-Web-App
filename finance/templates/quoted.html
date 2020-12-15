@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   Quoted
+
+{% endblock %}
+{% block main %}
+  <div class="stocktable" style="text-align:center;">
+      <table style="max-width:500px;margin:auto">
+        <tr>
+           <th>Stock Symbol</th>
+           <th>Stock Name</th>
+           <th>Share Price</th>
+        </tr>
+        <tr>
+           <td>{{stockvar["symbol"]}}</td>
+           <td>{{stockvar["name"]}}</td>
+           <td>{{stockvar["price"]}}</td>
+        </tr>
+      </table>
+  </div>
+
+{% endblock %}
